@@ -520,11 +520,7 @@ function tryUnlock(){
     goTo('page-letter');
   } else {
     attempts++;
-    if(attempts >= 3){
-      flashWrong("Hint: the date we got together.", true);
-    } else {
-      flashWrong("That's not it. Try again.");
-    }
+    flashWrong("Hint: our first date.", true);
   }
 }
 
